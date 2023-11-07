@@ -2,7 +2,7 @@ import css from './Statistics.module.css';
 import PropTypes from 'prop-types';
 
 
-export const Statistics = ({ title, stats }) => {
+ const Statistics = ({ title, stats }) => {
     function getRandomHexColor() {
         return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
     }
