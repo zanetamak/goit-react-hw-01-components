@@ -12,7 +12,8 @@ export const Statistics = ({ title, stats }) => {
       <ul className={css.statList}>
         {stats.map(stat => (
              <li
-            style={{ backgroundColor: getRandomHexColor() }}
+                style={{ backgroundColor: getRandomHexColor() }}
+                // key={stat.id}
             className={css.item}
           >
             <span className={css.label}>{stat.label}</span>
