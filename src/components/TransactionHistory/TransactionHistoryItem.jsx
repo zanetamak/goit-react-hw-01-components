@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 const TransactionHistoryItem = ({ id, type, amount, currency }) => {
     return (
-      <tr id={id}>
+      <tr>
       <td>{type}</td>
       <td>{amount}</td>
       <td>{currency}</td>
@@ -13,7 +13,7 @@ const TransactionHistoryItem = ({ id, type, amount, currency }) => {
 TransactionHistoryItem.propTypes = {
   id: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired,
-  amount: PropTypes.string.isRequired, // dlaczego nie number?
+  amount: PropTypes.string.isRequired, 
   currency: PropTypes.string.isRequired,
 };
 
